@@ -1,7 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.homePage = void 0;
-const homePage = (client) => `<!DOCTYPE html>
+const homePage = (client) => `
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -22,7 +23,7 @@ const homePage = (client) => `<!DOCTYPE html>
   </tr>
       <tr>
       ${client.accounts
-    .map((account, i) => `
+    .map((account) => `
     <td>${account.name}</td>
     <td>${account.amount}</td>
     </tr>
@@ -31,6 +32,7 @@ const homePage = (client) => `<!DOCTYPE html>
         
       </table>
     </div>
+    <script src="admin.js"></script> 
   </body>
 </html>`;
 exports.homePage = homePage;

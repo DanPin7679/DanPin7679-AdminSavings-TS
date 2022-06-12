@@ -6,12 +6,16 @@
   "scripts": {
     "dev": "tsc --watch --preserveWatchOutput",
     "server": "nodemon dist/backend/server.js",
-    "test": "node dist/tests/Client.js"
+    "test": "node dist/tests/Client.js",
+    "db": "json-server --watch db.json"
   },
+  "type": "module",
   "devDependencies": {
     "@types/node": "^17.0.42"
   },
   "dependencies": {
+    "mysql2": "^2.3.3",
+    "node-fetch": "^2.6.7",
     "nodemon": "^2.0.16"
   }
 }

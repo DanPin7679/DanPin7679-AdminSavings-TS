@@ -1,1 +1,3 @@
 node_modules
+dist
+demo_db_connection.js

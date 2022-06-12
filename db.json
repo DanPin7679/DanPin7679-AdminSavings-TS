@@ -1,0 +1,54 @@
+{
+  "adminMockData": [
+    {
+      "id": 1,
+      "firstName": "Jack",
+      "lastName": "Admin"
+    },
+    {
+      "id": 2,
+      "firstName": "Janet",
+      "lastName": "Admin"
+    }
+  ],
+  "clientMockData": [
+    {
+      "id": 1,
+      "firstName": "Joe",
+      "lastName": "Example",
+      "accounts": [
+        {
+          "id": 1,
+          "type": "cash",
+          "name": "myAccount",
+          "amount": 5000
+        },
+        {
+          "id": 2,
+          "type": "cash",
+          "name": "familyEmergency",
+          "amount": 3000
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "firstName": "Jane",
+      "lastName": "Example",
+      "accounts": [
+        {
+          "id": 1,
+          "type": "cash",
+          "name": "myAccount",
+          "amount": 1000
+        },
+        {
+          "id": 2,
+          "type": "cash",
+          "name": "familyEmergency",
+          "amount": 2000
+        }
+      ]
+    }
+  ]
+}

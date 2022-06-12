@@ -1,4 +1,5 @@
-export const homePage = (client) => `<!DOCTYPE html>
+export const homePage = (client) => `
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -20,7 +21,7 @@ export const homePage = (client) => `<!DOCTYPE html>
       <tr>
       ${client.accounts
         .map(
-          (account, i) => `
+          (account: { name: any; amount: any }) => `
     <td>${account.name}</td>
     <td>${account.amount}</td>
     </tr>
@@ -30,5 +31,6 @@ export const homePage = (client) => `<!DOCTYPE html>
         
       </table>
     </div>
+    <script src="admin.js"></script> 
   </body>
 </html>`;
